@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    /* question 2 */
+    .nav-bar{
+         display: grid;
+         grid-template: repeat(1,1fr)/repeat(3,150px);
+         width:99.5%;
+         justify-content: space-between;
+         align-items: center;
+         height: 10vh;
+    }
+    .nav-img img{
+        width: 50px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: black;
+        margin-left: 50px;
+    }
+    .nav-links{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .nav-button button{
+        width:150px;
+        height:30px;
+        border-radius: 5px;
+        background-color: #4eff2f;
+        border-style: none;
+    }
+    /* question 1 */
+    .container-1{
+        height:89.5vh;
+        width: 99.5%;
+        display:grid;
+        grid-template: repeat(1,1fr)/repeat(2,500px);
+        justify-content:space-between;
+        align-items: center;
+    }
+    .cont-1-text{
+        width:400px;
+        padding-left:180px;
+    }
+    .cont-1-text h1{
+        font-size:40px;
+    }
+    .cont-1-text p{
+        margin:40px 0px 40px 0px;
+        font-size:19px;
+        color: #6e6e6e;
+    }
+    .cont-1-text button{
+        width:150px;
+        height:35px;
+        color: #fff;
+        background-color: #000000;
+        border-style: none;
+    }
+    .cont-1-img{
+      width:680px;
+      height:89.5vh;
+      background-color: yellow;
+      margin-left: -180px;
+    }
+    .cont-1-img img{
+        width:500px;
+        height:89.5vh;
+    }
+    /* question 3 */
+    .container-2{
+        display:grid;
+        grid-template:repeat(1,1fr)/repeat(3,300px);
+        justify-content: space-between;
+        background-color:#2b1e16;
+        padding:0px 50px 0px 50px;
+        margin-top:10px;
+        height: 100%;
+        width:93%;
+    }
+    .cont-same-2{
+        width: 300px;
+        height: 400px;
+        text-align: center;
+    }
+    .cont-same-2 img{
+        width: 155px;
+        height: 255px;
+    }
+    .cont-same-2 h1{
+        margin:20px 0px 20px 0px;
+        color: #fff;
+        font-size:25px;
+    }
+    .cont-same-2 p{
+        color:  #a68a7d;
+    }
+    /* question 4 */
+    .container-3{
+       width:85%;
+       display: grid;
+       margin:50px auto;
+       grid-template: repeat(1,1fr)/repeat(3,200px);
+       justify-content: space-between;
+       padding: 0px 102px 0px 0px;
+    }
+    .container-3-card{
+        width:300px;
+        height:250px;
+    }
+    .container-3-card img{
+        width:300px;
+        height: 165px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .container-3-card h2,p{
+        margin:5px 0px 0px 40px;
+    }
+    .container-3-card p{
+        width:200px;
+    }
+    .cont-3-text{
+        width:297px;
+        height:85px;
+        margin-top: -5px;
+        border: 2px solid #6d6c6c;
+        border-radius:0px 0px 20px 20px;
+    }
+    /* question 5 */
+    footer{
+        width: 100%;
+        height:70vh;
+        background-color: #2b1e16;
+        margin-top: 10vh;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        padding:100px 0px 0px 200px;
+    }
+    .footer-same-navlinks{
+        margin-left: 150px;
+    }
+    .footer-same-navlinks h2{
+        color: #fff;
+        width:200px;
+    }
+    .footer-nav-links-same-a{
+        display: grid;
+        grid-template:repeat(4,1fr)/repeat(1,1fr);
+    }
+    .footer-nav-links-same-a a{
+        margin-top:40px;
+        text-decoration: none;
+        color: #a68a7d;
+    }
+    .copy-right-text{
+        text-align: center;
+        color: #fff;
+    }
+</style>
+<body>
+    <header>
+        <!-- question 2 -->
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-img">
+                    <img src="https://png.pngtree.com/png-vector/20230226/ourmid/pngtree-healthy-food-logo-design-with-chopstick-png-image_6620072.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="nav-button">
+                    <button>Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- question 1 -->
+        <div class="container-1">
+            <div class="cont-1-text">
+                <h1>Healthy Food</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorem corrupti ratione, similique iusto quidem vitae, natus atque obcaecati fugit nam! Impedit hic, tempora fugiat cumque magnam voluptatibus delectus, quaerat, blanditiis culpa obcaecati accusantium eum consectetur maiores veniam ab illum optio praesentium nemo quibusdam omnis consequatur eius amet ad voluptates?</p>
+                <button>Read More</button>
+            </div>
+            <div class="cont-1-img">
+                <img src="https://www.cleaneatingkitchen.com/wp-content/uploads/2020/12/healthy-foods-on-a-table-700x1050.jpg" alt="">
+            </div>
+        </div>
+        <!-- question 3 -->
+        <div class="container-2">
+            <div class=" cont-same-2">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" alt="">
+                <h1>No Minimum Order</h1>
+                <p>Order in for yourself or for the group, with no restrictions on order value</p>
+            </div>
+            <div class="cont-same-2">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy" alt="">
+                <h1>Live Order Tracking</h1>
+                <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+            </div>
+            <div class=" cont-same-2">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn" alt="">
+                <h1>Lightning-Fast Delivery</h1>
+                <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+            </div>
+        </div>
+        <!-- question 4 -->
+        <div class="container-3">
+            <div class="container-3-card">
+                <img src="https://media.istockphoto.com/id/618457124/photo/butter-chicken-served-with-homemade-indian-naan-bread.jpg?s=612x612&w=0&k=20&c=7FoiHoDtocfPvQIaRFfFani4e5lkfMTNl_619rTTh4g=" alt="">
+                <div class="cont-3-text">
+                <h2>Order Online</h2>
+                <p>Stay Home and order to your Door Step</p>
+            </div>
+            </div>
+            <div class="container-3-card">
+                <img src="https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801_1280.jpg" alt="">
+                <div class="cont-3-text">
+                <h2>On-site Dinning</h2>
+                <p>View the city's favourite dinning venues.</p>
+                </div>
+            </div>
+            <div class="container-3-card">
+                <img src="https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764_640.jpg" alt="">
+                <div class="cont-3-text">
+                <h2>Nightlife & Clubs</h2>
+                <p>Explore the city's top nightlife outlets & book tables.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+       <!-- question 5 -->
+       <div class="footer">
+        <div class="foooter-img">
+            <img src="https://png.pngtree.com/png-vector/20230226/ourmid/pngtree-healthy-food-logo-design-with-chopstick-png-image_6620072.png" alt="">
+        </div>
+        <div class="footer-nav-links-1 footer-same-navlinks">
+            <h2>Navigation Links</h2>
+            <div class="footer-nav-links-same-a">
+                <a href="#" class="same-footer-links1">Home</a>
+                <a href="#" class="same-footer-links2">About</a>
+                <a href="#" class="same-footer-links3">Contact</a>
+                <a href="#" class="same-footer-links4">Login</a>
+            </div>
+        </div>
+        <div class="footer-nav-links-2 footer-same-navlinks">
+            <h2>Learn More</h2>
+            <div class="footer-nav-links-same-a">
+                <a href="#" class="same-footer-links1">Privacy</a>
+                <a href="#" class="same-footer-links2">Security</a>
+                <a href="#" class="same-footer-links3">Terms</a>
+                <a href="#" class="same-footer-links4">Sitemap</a>
+            </div>
+        </div>
+       </div>
+       <div class="copy-right-text">
+        <p>&#169; Copyright All rights Reserved</p>
+       </div>
+    </footer>
+</body>
+</html>
